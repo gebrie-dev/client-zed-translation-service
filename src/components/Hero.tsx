@@ -44,7 +44,7 @@ const Hero: React.FC = () => {
         >
           {/* Main Heading */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-poppins mb-6 leading-tight">
-            <span className="block">Zed Translation</span>
+            <span className="block">zema Translation</span>
             <span className="block text-2xl md:text-4xl lg:text-5xl font-normal mt-2">
               Your Trusted Partner for
             </span>

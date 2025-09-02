@@ -39,7 +39,7 @@ const Navbar: React.FC = () => {
               <GlobeAltIcon className="h-8 w-8 text-pink-300" />
             </motion.div>
             <span className="text-xl font-bold font-poppins">
-              Zed Translation
+              zema Translation
             </span>
           </Link>
 

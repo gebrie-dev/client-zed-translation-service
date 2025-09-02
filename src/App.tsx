@@ -13,8 +13,9 @@ function App() {
   return (
     <Router>
       <Helmet>
+
         <title>
-          Zed Translation - Professional Translation Services in Addis Ababa,
+          zema Translation - Professional Translation Services in Addis Ababa,
           Ethiopia
         </title>
         <meta
@@ -26,7 +27,7 @@ function App() {
           content="translation services, Addis Ababa, Ethiopia, Amharic translation, Tigrigna translation, Oromo translation, certified translation, legal translation, medical translation"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href="https://zedtranslation.com" />
+        <link rel="canonical" href="https://zematranslation.netlify.app" />
       </Helmet>
 
       <div className="min-h-screen flex flex-col">

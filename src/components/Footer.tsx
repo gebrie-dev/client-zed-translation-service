@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
               <Link to="/" className="flex items-center space-x-2 mb-4">
                 <GlobeAltIcon className="h-8 w-8 text-pink-400" />
                 <span className="text-2xl font-bold font-poppins">
-                  Zed Translation
+                  zema Translation
                 </span>
               </Link>
 
@@ -77,7 +77,7 @@ const Footer: React.FC = () => {
                 </div>
                 <div className="flex items-center space-x-3">
                   <EnvelopeIcon className="h-5 w-5 text-teal-400" />
-                  <span className="text-gray-300">info@zedtranslation.com</span>
+                  <span className="text-gray-300">info@zematranslation.com</span>
                 </div>
               </div>
             </motion.div>
@@ -187,7 +187,7 @@ const Footer: React.FC = () => {
               viewport={{ once: true }}
               className="text-gray-400 text-sm"
             >
-              © {currentYear} Zed Translation. All rights reserved.
+              © {currentYear} zema Translation. All rights reserved.
             </motion.div>
 
             <motion.div

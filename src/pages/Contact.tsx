@@ -52,13 +52,13 @@ const Contact: React.FC = () => {
     {
       icon: EnvelopeIcon,
       title: "Email",
-      details: "info@zedtranslation.com",
+      details: "tekluzenebech97@gmail.com",
       color: "pink",
     },
     {
       icon: ClockIcon,
       title: "Business Hours",
-      details: "Mon-Fri: 8AM-6PM EAT",
+      details: "Mon-sunday: 8AM-1PM EAT",
       color: "teal",
     },
   ];
@@ -324,7 +324,7 @@ const Contact: React.FC = () => {
                 <span>WhatsApp</span>
               </a>
               <a
-                href="https://t.me/zedtranslation"
+                href="https://t.me/@teklu19"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2"

@@ -1,9 +1,9 @@
 {
-  "name": "zed-translation",
+  "name": "zema-translation",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "Professional translation services website for Zed Translation in Addis Ababa, Ethiopia",
+  "description": "Professional translation services website for zema Translation in Addis Ababa, Ethiopia",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

@@ -1,6 +1,6 @@
-# Zed Translation - Professional Translation Services
+# zema Translation - Professional Translation Services
 
-A modern, responsive website for Zed Translation, a professional translation service based in Addis Ababa, Ethiopia. Built with React, TypeScript, and Tailwind CSS.
+A modern, responsive website for zema Translation, a professional translation service based in Addis Ababa, Ethiopia. Built with React, TypeScript, and Tailwind CSS.
 
 ## Features
 
@@ -10,7 +10,7 @@ A modern, responsive website for Zed Translation, a professional translation ser
 - **Services**: Comprehensive translation services for court, medical, business, and academic documents
 - **Contact System**: Contact forms with WhatsApp and Telegram integration
 - **Animations**: Smooth animations using Framer Motion
-- **SEO Optimized**: Meta tags and structured data for search engines
+- **SEO Optimizema**: Meta tags and structured data for search engines
 
 ## Tech Stack
 
@@ -37,7 +37,7 @@ A modern, responsive website for Zed Translation, a professional translation ser
 
 ```bash
 git clone <repository-url>
-cd zed-translation
+cd zema-translation
 ```
 
 2. Install dependencies:
@@ -173,8 +173,8 @@ This project is licensed under the MIT License.
 
 ## Support
 
-For support, email info@zedtranslation.com or contact us via WhatsApp/Telegram.
+For support, email info@zematranslation.com or contact us via WhatsApp/Telegram.
 
 ---
 
-Built with ❤️ for Zed Translation, Addis Ababa, Ethiopia
+Built with ❤️ for zema Translation, Addis Ababa, Ethiopia
