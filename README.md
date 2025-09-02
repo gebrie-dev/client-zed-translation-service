@@ -6,7 +6,7 @@ A modern, responsive website for zema Translation, a professional translation se
 
 - **Modern Design**: Responsive, mobile-first design with vibrant pink (#FF69B4) and teal (#26A69A) color scheme
 - **Document Upload**: Secure drag-and-drop file upload system with validation
-- **Language Support**: Support for local languages (Amharic, Tigrigna, Oromo) and international languages
+- **Language Support**: Support for local languages (Amharic, Tigrigna, ) and international languages
 - **Services**: Comprehensive translation services for court, medical, business, and academic documents
 - **Contact System**: Contact forms with WhatsApp and Telegram integration
 - **Animations**: Smooth animations using Framer Motion
@@ -115,6 +115,19 @@ The app can be deployed to any static hosting service:
 - GitHub Pages
 - AWS S3 + CloudFront
 - Firebase Hosting
+
+### Netlify Notes (React 19 peer deps)
+
+Netlify may fail dependency installation due to peer-dependency conflicts (e.g., `react-slick` expects React <= 18). This repo includes:
+
+- `netlify.toml` to force legacy peer deps during build
+- `.npmrc` with `legacy-peer-deps=true`
+
+If you set build settings manually in the dashboard:
+
+- Build command: `npm install --legacy-peer-deps && npm run build`
+- Publish directory: `dist`
+- Node version: `20.12.2`
 
 ## Features Overview
 

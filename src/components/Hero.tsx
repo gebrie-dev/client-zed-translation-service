@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 bg-hero bg-cover bg-center bg-no-repeat">
-        <div className="absolute inset-0 bg-gradient-to-br from-pink-500/80 to-teal-500/80"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-teal-600/80 to-pink-500/60"></div>
       </div>
 
       {/* Geometric Pattern Overlay */}
@@ -48,7 +48,7 @@ const Hero: React.FC = () => {
             <span className="block text-2xl md:text-4xl lg:text-5xl font-normal mt-2">
               Your Trusted Partner for
             </span>
-            <span className="block text-gradient bg-gradient-to-r from-pink-200 to-teal-200 bg-clip-text text-transparent">
+            <span className="block text-gradient bg-gradient-to-r from-teal-200 to-pink-200 bg-clip-text text-transparent">
               Global Communication
             </span>
           </h1>
@@ -93,11 +93,11 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 max-w-md mx-auto"
+            className="bg-teal-900/30 border border-teal-300/30 backdrop-blur-sm rounded-2xl p-6 max-w-md mx-auto"
           >
             <div className="flex items-center justify-center space-x-3 mb-2">
-              <DocumentTextIcon className="h-8 w-8 text-pink-300" />
-              <span className="text-3xl font-bold font-poppins">
+              <DocumentTextIcon className="h-8 w-8 text-teal-300" />
+              <span className="text-3xl font-bold font-poppins text-teal-200">
                 {documentCount.toLocaleString()}+
               </span>
             </div>

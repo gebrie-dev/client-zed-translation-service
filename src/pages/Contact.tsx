@@ -46,7 +46,7 @@ const Contact: React.FC = () => {
     {
       icon: PhoneIcon,
       title: "Phone",
-      details: "+251 11 123 4567",
+      details: "+251 940441453",
       color: "teal",
     },
     {
@@ -138,6 +138,44 @@ const Contact: React.FC = () => {
                 <p className="text-gray-600">{info.details}</p>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Map Section */}
+      <section className="section-padding">
+        <div className="container-custom">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="mb-8 text-center"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+              Our Location
+            </h2>
+            <p className="text-gray-600 max-w-3xl mx-auto">
+              Find us near Addis Ababa Stadium, Yeha Building
+            </p>
+          </motion.div>
+
+          <div className="card p-2">
+            <div
+              className="relative w-full"
+              style={{ paddingBottom: "56.25%" }}
+            >
+              <iframe
+                title="zema Translation Location"
+                aria-label="Map showing zema Translation location near Addis Ababa Stadium, Yeha Building"
+                className="absolute top-0 left-0 w-full h-full rounded-lg"
+                frameBorder={0}
+                scrolling="no"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                src="https://maps.google.com/maps?width=1200&height=675&hl=en&q=addis%20abba%20stadium%2Cyeha%20building&t=&z=14&ie=UTF8&iwloc=B&output=embed"
+              />
+            </div>
           </div>
         </div>
       </section>

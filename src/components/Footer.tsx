@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
     languages: [
       { name: "Amharic", href: "/languages#amharic" },
       { name: "Tigrigna", href: "/languages#tigrigna" },
-      { name: "Oromo", href: "/languages#oromo" },
+      { name: "Oromifa", href: "/languages#oromifa" },
       { name: "English", href: "/languages#english" },
     ],
     company: [
@@ -69,15 +69,17 @@ const Footer: React.FC = () => {
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
                   <MapPinIcon className="h-5 w-5 text-teal-400" />
-                  <span className="text-gray-300">Addis Ababa, Ethiopia</span>
+                  <span className="text-gray-300">Yeha Building First floor, Stadium,Addis Ababa, Ethiopia</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <PhoneIcon className="h-5 w-5 text-teal-400" />
-                  <span className="text-gray-300">+251 11 123 4567</span>
+                  <span className="text-gray-300">+251 940441453</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <EnvelopeIcon className="h-5 w-5 text-teal-400" />
-                  <span className="text-gray-300">info@zematranslation.com</span>
+                  <span className="text-gray-300">
+                    tekluzenebech97@gmail.com
+                  </span>
                 </div>
               </div>
             </motion.div>
@@ -177,7 +179,7 @@ const Footer: React.FC = () => {
               className="flex items-center space-x-2 text-gray-400"
             >
               <ChartBarIcon className="h-4 w-4" />
-              <span className="text-sm">Analytics & Performance Tracking</span>
+              <span className="text-sm">Analytics & Perflanance Tracking</span>
             </motion.div>
 
             <motion.div

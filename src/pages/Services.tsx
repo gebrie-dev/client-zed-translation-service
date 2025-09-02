@@ -157,7 +157,7 @@ const Services: React.FC = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative bg-services bg-cover bg-center bg-no-repeat">
-        <div className="absolute inset-0 bg-gradient-to-br from-pink-500/90 to-teal-500/90"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-teal-700/85 to-pink-500/70"></div>
         <div className="relative z-10 section-padding text-center text-white">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -176,7 +176,7 @@ const Services: React.FC = () => {
       </section>
 
       {/* Services Grid */}
-      <section className="section-padding">
+      <section className="section-padding bg-gradient-to-b from-white to-teal-50">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -261,7 +261,7 @@ const Services: React.FC = () => {
       </section>
 
       {/* Document Types */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-gradient-to-b from-white to-pink-50">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -331,7 +331,7 @@ const Services: React.FC = () => {
       </section>
 
       {/* Process Section */}
-      <section className="section-padding">
+      <section className="section-padding bg-gradient-to-b from-white to-teal-50">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

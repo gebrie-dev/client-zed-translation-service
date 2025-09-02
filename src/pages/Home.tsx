@@ -24,7 +24,7 @@ const Home: React.FC = () => {
       icon: GlobeAltIcon,
       title: "Local & International",
       description:
-        "Supporting Amharic, Tigrigna, Oromo and 20+ international languages.",
+        "Supporting Amharic, Tigrigna, Oromifa and 20+ international languages.",
       color: "teal",
     },
     {
@@ -83,7 +83,7 @@ const Home: React.FC = () => {
       <Hero />
 
       {/* Features Section */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-gradient-to-b from-white to-red-50">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -175,7 +175,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="section-padding bg-gradient-primary text-white">
+      <section className="section-padding bg-gradient-secondary text-white">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -213,7 +213,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Trust Indicators */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-gradient-to-b from-white to-pink-50">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

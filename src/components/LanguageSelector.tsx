@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { GlobeAltIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
+import { GlobeAltIcon } from "@heroicons/react/24/outline";
 
 interface Language {
   code: string;
   name: string;
   nativeName: string;
-  flag: string;
   category: "local" | "international";
 }
 
@@ -16,21 +15,18 @@ const languages: Language[] = [
     code: "am",
     name: "Amharic",
     nativeName: "አማርኛ",
-    flag: "/images/flags/amharic.png",
     category: "local",
   },
   {
     code: "ti",
     name: "Tigrigna",
     nativeName: "ትግርኛ",
-    flag: "/images/flags/tigrigna.png",
     category: "local",
   },
   {
     code: "om",
-    name: "Oromo",
+    name: "Oromifa",
     nativeName: "Afaan Oromoo",
-    flag: "/images/flags/oromo.png",
     category: "local",
   },
 
@@ -39,83 +35,72 @@ const languages: Language[] = [
     code: "en",
     name: "English",
     nativeName: "English",
-    flag: "/images/flags/english.png",
     category: "international",
   },
   {
     code: "fr",
     name: "French",
     nativeName: "Français",
-    flag: "/images/flags/french.png",
     category: "international",
   },
   {
     code: "ar",
     name: "Arabic",
     nativeName: "العربية",
-    flag: "/images/flags/arabic.png",
     category: "international",
   },
   {
     code: "es",
     name: "Spanish",
     nativeName: "Español",
-    flag: "/images/flags/spanish.png",
     category: "international",
   },
   {
     code: "zh",
     name: "Chinese",
     nativeName: "中文",
-    flag: "/images/flags/chinese.png",
     category: "international",
   },
   {
     code: "de",
     name: "German",
     nativeName: "Deutsch",
-    flag: "/images/flags/german.png",
     category: "international",
   },
   {
     code: "it",
     name: "Italian",
     nativeName: "Italiano",
-    flag: "/images/flags/italian.png",
     category: "international",
   },
   {
     code: "pt",
     name: "Portuguese",
     nativeName: "Português",
-    flag: "/images/flags/portuguese.png",
     category: "international",
   },
   {
     code: "ru",
     name: "Russian",
     nativeName: "Русский",
-    flag: "/images/flags/russian.png",
     category: "international",
   },
   {
     code: "ja",
     name: "Japanese",
     nativeName: "日本語",
-    flag: "/images/flags/japanese.png",
     category: "international",
   },
   {
     code: "ko",
     name: "Korean",
     nativeName: "한국어",
-    flag: "/images/flags/korean.png",
     category: "international",
   },
 ];
 
 const LanguageSelector: React.FC = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  // removed dropdown state as flags/icons are no longer used
   const [selectedLanguages, setSelectedLanguages] = useState<Language[]>([]);
   const [searchTerm, setSearchTerm] = useState("");
 
@@ -194,14 +179,7 @@ const LanguageSelector: React.FC = () => {
                   animate={{ scale: 1 }}
                   className="flex items-center space-x-2 bg-teal-100 text-teal-800 px-3 py-2 rounded-full"
                 >
-                  <img
-                    src={lang.flag}
-                    alt={lang.name}
-                    className="w-4 h-4 rounded-full"
-                    onError={(e) => {
-                      (e.target as HTMLImageElement).style.display = "none";
-                    }}
-                  />
+                  <div className="w-4 h-4 rounded-full bg-gradient-to-br from-teal-400 to-pink-400" />
                   <span className="text-sm font-medium">{lang.name}</span>
                   <button
                     onClick={() => removeLanguage(lang.code)}
@@ -241,14 +219,9 @@ const LanguageSelector: React.FC = () => {
                     onClick={() => toggleLanguage(language)}
                   >
                     <div className="flex items-center space-x-3">
-                      <img
-                        src={language.flag}
-                        alt={language.name}
-                        className="w-8 h-8 rounded-full"
-                        onError={(e) => {
-                          (e.target as HTMLImageElement).style.display = "none";
-                        }}
-                      />
+                      <div className="w-8 h-8 rounded-full bg-gradient-to-br from-teal-400 to-pink-400 flex items-center justify-center text-white text-xs font-semibold">
+                        {language.code.toUpperCase()}
+                      </div>
                       <div>
                         <p className="font-medium text-gray-800">
                           {language.name}
@@ -287,14 +260,9 @@ const LanguageSelector: React.FC = () => {
                     onClick={() => toggleLanguage(language)}
                   >
                     <div className="flex items-center space-x-3">
-                      <img
-                        src={language.flag}
-                        alt={language.name}
-                        className="w-8 h-8 rounded-full"
-                        onError={(e) => {
-                          (e.target as HTMLImageElement).style.display = "none";
-                        }}
-                      />
+                      <div className="w-8 h-8 rounded-full bg-gradient-to-br from-pink-400 to-teal-400 flex items-center justify-center text-white text-xs font-semibold">
+                        {language.code.toUpperCase()}
+                      </div>
                       <div>
                         <p className="font-medium text-gray-800">
                           {language.name}
