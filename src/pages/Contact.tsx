@@ -27,7 +27,7 @@ const Contact: React.FC = () => {
     reset,
   } = useForm<ContactForm>();
 
-  const onSubmit = async (data: ContactForm) => {
+  const onSubmit = async (_data: ContactForm) => {
     setIsSubmitting(true);
     // Simulate form submission
     await new Promise((resolve) => setTimeout(resolve, 2000));

@@ -4,9 +4,8 @@ import {
   DocumentTextIcon,
   ClockIcon,
   CheckIcon,
-  XMarkIcon,
   CurrencyDollarIcon,
-  GlobeAltIcon,
+ 
 } from "@heroicons/react/24/outline";
 
 const Pricing: React.FC = () => {
