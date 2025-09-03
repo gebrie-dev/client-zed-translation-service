@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-teal-900 text-white">
       {/* Main Footer Content */}
       <div className="container-custom section-padding">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">

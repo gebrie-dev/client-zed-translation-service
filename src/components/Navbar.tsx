@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import {
   Bars3Icon,
   XMarkIcon,
-  GlobeAltIcon,
   DocumentTextIcon,
   PhoneIcon,
 } from "@heroicons/react/24/outline";
@@ -35,7 +34,13 @@ const Navbar: React.FC = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-              <GlobeAltIcon className="h-8 w-8 text-pink-300" />
+              {/* Replace GlobeAltIcon with your logo image */}
+              <img
+                src="/images/logo.png"
+                alt="zema Translation Logo"
+                className="h-10 w-10 object-contain"
+                style={{ borderRadius: "8px" }}
+              />
             </motion.div>
             <span className="text-xl font-bold font-poppins">
               zema Translation
