@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import {
@@ -8,7 +8,7 @@ import {
   ArrowRightIcon,
 } from "@heroicons/react/24/outline";
 
-const Hero = () => {
+const HomePage = () => {
   const [documentCount, setDocumentCount] = useState(0);
   const targetCount = 10000;
 
@@ -173,4 +173,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default HomePage;

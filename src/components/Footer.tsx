@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
-  GlobeAltIcon,
   PhoneIcon,
   EnvelopeIcon,
   MapPinIcon,
@@ -53,11 +52,16 @@ const Footer: React.FC = () => {
               viewport={{ once: true }}
             >
               <Link to="/" className="flex items-center space-x-2 mb-4">
-                <GlobeAltIcon className="h-8 w-8 text-pink-400" />
-                <span className="text-2xl font-bold font-poppins">
-                  zema Translation
-                </span>
-              </Link>
+  <img
+    src="/images/logo.png"
+    alt="zema Translation Logo"
+    className="h-10 w-10 object-contain"
+    style={{ borderRadius: "8px" }}
+  />
+  <span className="text-2xl font-bold font-poppins">
+    zema Translation
+  </span>
+</Link>
 
               <p className="text-gray-300 mb-6 leading-relaxed">
                 Your trusted partner for professional translation services in
